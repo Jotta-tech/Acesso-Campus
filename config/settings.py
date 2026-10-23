@@ -44,6 +44,12 @@ ALLOWED_HOSTS = [
     if host.strip()
 ]
 
+# Origens confiáveis para desenvolvimento local
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+]
+
 # --- Aplicações ------------------------------------------------------------
 
 INSTALLED_APPS = [
